@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f4f2786e-cbe0-4ddc-ae68-a9650ae603fb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="surat" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from surat inner join identitas_penduduk using (nik) where no_surat = $P{surat} AND surat.nik = identitas_penduduk.nik]]>
+	</queryString>
+	<field name="nik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_surat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_surat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tujuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_kk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempat_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="agama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pendidikan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pekerjaan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hubungan_keluarga" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kewarganegaraan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_ayah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_ibu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gol_darah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_pos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<image>
+				<reportElement uuid="481e3773-2180-46aa-a306-de39066edbe0" x="46" y="4" width="60" height="75"/>
+				<imageExpression><![CDATA["C:\\Users\\Ez{Ghost}\\Documents\\NetBeansProjects\\sistem_kependudukan\\src\\Report\\Logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="03de2b85-3cdb-47cf-b6d4-c54bd64cab43" x="142" y="4" width="290" height="75"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PENGURUS RUKUN TETANGGA (RT) 011 / 03
+KEL. PINANG RANTI KEC. MAKASAR
+JAKARTA – TIMUR]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="44dce9c7-4ba1-4129-84a3-3072fda53ab2" x="0" y="94" width="555" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement uuid="685258f4-e6e6-4904-84e1-7cbc26852ccf" x="0" y="89" width="555" height="3" backcolor="#000000"/>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="66ffdd6a-f507-4806-88f9-31c3a437dd12" x="210" y="10" width="163" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SURAT PENGANTAR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="685258f4-e6e6-4904-84e1-7cbc26852ccf" x="210" y="30" width="163" height="3" backcolor="#000000"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="d1383428-6e64-4dad-9228-6df4a1db0afd" x="210" y="37" width="260" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nomor :   ...   /JT/IV/RT /03/SP/VIII/ ...]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="0d851eb7-d9b4-445b-a7bb-bf229444237c" x="46" y="0" width="468" height="61"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[	Yang bertanda tangan dibawah ini , saya selaku pengurus Rukun Tetangga 011 Rukun Warga 03 Kelurahan Pinang – Ranti, Kecamatan Makasar Jakarta – Timur,  dengan ini menerangkan bahwa :
+]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="459" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5b13fc49-6881-423b-bf01-6129d7f4045d" x="46" y="3" width="141" height="156"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama			:
+Tempat, Tgl Lahir	:
+Jenis Kelamin		:
+No KTP / KK		:
+Kewarganegaraan	:
+Agama			:
+Alamat			:
+
+
+Maksud / Keperluan	:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="247e7d46-98be-4603-9b16-74bf4037744e" x="187" y="2" width="186" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="48a1d8e6-d9df-43eb-ba53-4399e488e509" x="187" y="45" width="186" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f2bf8e1a-1c2c-4eb1-9756-4dc8bc613c9b" x="187" y="30" width="186" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4ff7fb2a-b949-4aa5-93ed-7f4837b9c408" x="187" y="17" width="50" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tempat_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a0caf755-8f44-4d6c-963f-e82cf44ba195" x="237" y="17" width="136" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="56cebd82-e709-4cbe-a86a-b06e647e2399" x="187" y="60" width="186" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kewarganegaraan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1de02ec5-8d90-4858-95de-5fe8deecf0a2" x="187" y="73" width="186" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{agama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="17fff069-ebb1-4598-8b3d-fd9954b45638" x="187" y="88" width="186" height="31"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4c6e556e-3fb0-4831-8f6a-3dc8d717ecaa" x="187" y="129" width="186" height="30"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tujuan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d66e8f02-3927-4e88-ac2d-7621cd1ff15c" x="46" y="171" width="468" height="45"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[	Demikian surat pengantar ini saya buat untuk dapat di pergunakan sebagaimana mestinya dan kepada pihak terkait mohon bantuanya.
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3485cc22-357d-4abf-ab7d-608078aa5dac" x="137" y="232" width="100" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal_surat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="38f9523b-5a14-4915-9aee-e3238bf113a2" x="46" y="216" width="205" height="36"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nomor 		:   ... /JT/IV/011/03/….
+Tanggal 	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7fe39364-45de-4175-8beb-43e43ede18f5" x="60" y="312" width="100" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Mengetahui, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1896a884-8556-465f-b2f1-fa76002eff7e" x="60" y="332" width="100" height="117"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ketua RW 03
+
+
+
+
+
+(DEDI SUSANTO)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1896a884-8556-465f-b2f1-fa76002eff7e" x="350" y="332" width="164" height="117"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KETUA
+
+
+
+
+
+(SAMSUL ALAM BACHRI)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7c6de6ad-c93b-45c4-b18f-d5da102d5365" x="350" y="313" width="164" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[PENGURUS RT 011 / 03]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a752753d-10e5-4c2e-883c-107a9ba90ede" x="373" y="280" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="f9073d27-3727-4b5a-b75a-36220ad2ec2e" x="414" y="280" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

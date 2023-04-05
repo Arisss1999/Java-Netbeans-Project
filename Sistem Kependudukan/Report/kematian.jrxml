@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2391d0f7-69bb-4293-b91d-2d77cda91e37">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from kematian]]>
+	</queryString>
+	<field name="no_kematian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_surat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_kk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempat_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_kematian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="agama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pekerjaan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempat_kematian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pelapor" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hub_keluarga" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kewarganegaraan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="03de2b85-3cdb-47cf-b6d4-c54bd64cab43" x="74" y="0" width="422" height="75"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PENGURUS RUKUN TETANGGA (RT) 011 / 03
+KEL. PINANG RANTI KEC. MAKASAR
+JAKARTA – TIMUR]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="685258f4-e6e6-4904-84e1-7cbc26852ccf" x="1" y="75" width="555" height="3" backcolor="#000000"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="2c955c8b-cdc6-4cb5-901a-485318aa9846" x="4" y="7" width="65" height="63"/>
+				<imageExpression><![CDATA["C:\\Users\\Ez{Ghost}\\Documents\\NetBeansProjects\\sistem_kependudukan\\src\\Report\\Logo.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement uuid="44dce9c7-4ba1-4129-84a3-3072fda53ab2" x="1" y="82" width="555" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Double"/>
+				</graphicElement>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50">
+			<staticText>
+				<reportElement uuid="6b9dd6b1-1d20-4ddc-9497-f3e970633bb9" x="146" y="11" width="272" height="28"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA KEMATIAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="291" splitType="Stretch">
+			<line>
+				<reportElement uuid="ca459fc4-a20b-4c41-b4f9-69a6a4887c59" x="6" y="3" width="289" height="1"/>
+			</line>
+			<rectangle>
+				<reportElement uuid="cb36fb92-8251-4710-9e8a-41ff63e50d47" x="5" y="3" width="133" height="220" backcolor="#CCCCCC"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="38d2e012-d472-42cd-a388-7017b4eab7a9" x="146" y="3" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_kematian}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="416fef2c-fe9e-40d3-95d2-b2dcae864ef5" x="5" y="3" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nomor Surat Kematian]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="0e6aa4c1-28e3-4a11-8f00-30855bbd27a8" x="146" y="23" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_surat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="751f7923-211f-430b-9db4-dff48a493b74" x="5" y="23" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Surat]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="889e444d-4f49-4fd5-80fb-2b31bc169acc" x="146" y="43" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f1c32176-b9e2-499b-bc88-c638cded607f" x="5" y="43" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="067fabd3-99a0-4386-b1ee-b5232cd4e316" x="146" y="63" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_kk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="49d8462b-24a3-4cb5-8a97-e6a462682cc9" x="146" y="83" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="955bb6b2-22f3-4a6c-81cf-ca3dbefe5847" x="5" y="83" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="94ae0a30-9679-4a04-a8ef-aca15d8bf2d6" x="5" y="63" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[No. KK]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="577e4961-cc7f-4926-8ee0-579695de40ba" x="146" y="103" width="50" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tempat_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5aee31cd-18a9-4fec-a2f4-5c4bfd8ec5a3" x="196" y="103" width="100" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="50fe5aea-2baf-4f59-97f9-69514746734c" x="146" y="123" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_kematian}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ae215598-06e2-45a0-aeee-44cb8a43d28b" x="5" y="123" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kematian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a4adab91-37fd-433a-9533-614ada82a99b" x="5" y="103" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Tempat, Tanggal Lahir]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="38e02d72-1925-4c5f-aa8d-fdaec9fe8025" x="146" y="143" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kelamin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fa945db3-6ba9-4557-bf1f-915720884f9d" x="5" y="143" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3d442138-7bfb-4bb4-be2a-7c17ded0a594" x="146" y="163" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{agama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="da8340d0-5da0-4972-a6f2-34b821a685e7" x="5" y="163" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Agama]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="df8dfa0f-7cbb-4623-ae35-3a2d575a2319" x="146" y="183" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0097b806-1ca8-46c9-8427-f296efd36fe5" x="5" y="183" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="94139913-1083-4238-abb4-c31dbdd5327a" x="146" y="203" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="661a6a61-f95f-473b-ae9c-8af8e5100ae1" x="5" y="203" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="8477d129-ad96-4375-a00a-32264d052423" x="146" y="223" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_pelapor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3469db99-71ac-4435-b1cf-e4829bc3eabd" x="146" y="243" width="150" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hub_keluarga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="99c622c5-2fb7-4d71-8f17-fcc662f4724e" x="5" y="243" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Hubungan Keluarga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a581199e-64f7-4eb6-be78-82516222a7c1" x="5" y="223" width="133" height="20"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Pelapor]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="fe02c4ff-e24c-48b4-ae23-f445c01087e5" x="296" y="2" width="1" height="259"/>
+			</line>
+			<line>
+				<reportElement uuid="886b7789-d386-47f4-87d0-37ec5016c49d" x="5" y="7" width="1" height="254"/>
+			</line>
+			<line>
+				<reportElement uuid="53c9a6ce-40ec-4655-9396-e4cff62c05ec" x="6" y="223" width="290" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="53c9a6ce-40ec-4655-9396-e4cff62c05ec" x="7" y="243" width="290" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="fe02c4ff-e24c-48b4-ae23-f445c01087e5" x="138" y="9" width="1" height="254"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="23" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="43" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="63" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="83" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="139" y="103" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="122" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="143" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="163" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="138" y="183" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c283466c-d5c2-45a2-8e3b-ec10a5c5b4b1" x="139" y="203" width="158" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="a6e6df40-377d-4d39-b31c-c0a6e61f466a" x="7" y="260" width="291" height="1"/>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="186" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a752753d-10e5-4c2e-883c-107a9ba90ede" x="405" y="9" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1896a884-8556-465f-b2f1-fa76002eff7e" x="382" y="61" width="164" height="117"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KETUA
+
+
+
+
+
+(SAMSUL ALAM BACHRI)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7c6de6ad-c93b-45c4-b18f-d5da102d5365" x="382" y="42" width="164" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[PENGURUS RT 011 / 03]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="f9073d27-3727-4b5a-b75a-36220ad2ec2e" x="446" y="9" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
