@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="08b6c41f-1d5d-412d-a133-309e11090c85">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="tanggal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT DISTINCT kd_pembelian,tanggal,total_belanja,jam from penjualan where tanggal = $P{tanggal}]]>
+	</queryString>
+	<field name="kd_pembelian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_belanja" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ed9127ee-617d-4cf4-820e-daeda1ea2555" x="235" y="2" width="112" height="34"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="30"/>
+				</textElement>
+				<text><![CDATA[BAKOPI]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="cd11b5bf-206e-4b20-8505-fab7b1b35b14" x="0" y="93" width="555" height="2"/>
+			</line>
+			<staticText>
+				<reportElement uuid="b294442d-7db9-4a89-a947-564694ac1bdd" x="220" y="36" width="139" height="20"/>
+				<textElement>
+					<font fontName="Berlin Sans FB" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ngebako Sambil Ngopi]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="57a50343-d107-4e57-9917-5cb78d33a2ce" x="26" y="13" width="68" height="71"/>
+				<imageExpression><![CDATA["232609474_272493830980422_7565998019275478748_n.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="870f5bb4-9596-4a7f-93ea-12adfdab14c7" x="112" y="56" width="339" height="27"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. MT. Haryono No.250, Ciledug, Kec. Setu, Kabupaten Bekasi, Jawa Barat 17320]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="692d5de1-cc19-4740-a419-9f1df7e105ef" x="112" y="0" width="347" height="35"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Penjualan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="0d43ac25-9c1c-491e-a7e5-b57118e5afc7" x="133" y="4" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Pembelian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="05e3663f-cef8-43e3-88cd-87e538e2aada" x="333" y="4" width="102" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Total Belanja]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="06520bd0-b5ca-4029-adcb-6a0e078876a5" x="76" y="4" width="402" height="20" backcolor="#000000"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="0d43ac25-9c1c-491e-a7e5-b57118e5afc7" x="76" y="4" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Pembelian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="678ae0cc-7995-4727-b8e8-ac1bf8b6dce7" x="176" y="4" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="05e3663f-cef8-43e3-88cd-87e538e2aada" x="378" y="4" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Total Belanja]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="05e3663f-cef8-43e3-88cd-87e538e2aada" x="276" y="4" width="102" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="44bba8e3-548d-4f12-a38e-17c4f5cb56f1" x="305" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[jam]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="739d4fae-253c-4678-a135-0e0a3e933923" x="76" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kd_pembelian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5c472e5f-c9db-4ba9-83a7-103765b020f1" x="176" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd-MM-yyyy", new java.util.Locale("id")).format($F{tanggal})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="523a1598-1bd8-4996-be0f-07a102e529d6" x="378" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_belanja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7bfd047f-93d0-4939-b21d-1936c6d50c41" x="276" y="0" width="102" height="20"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jam}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="154" splitType="Stretch">
+			<line>
+				<reportElement uuid="cd11b5bf-206e-4b20-8505-fab7b1b35b14" x="0" y="6" width="555" height="2"/>
+			</line>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="350d6695-50e5-41e2-a2cc-0c2ed3f6b39a" x="395" y="19" width="150" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMM yyyy", new Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="95ba2234-dffd-4dfc-a941-abe28102cef5" x="355" y="120" width="190" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Uci Sapardi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="52fa76cb-df80-44bf-b6a1-12494ea692e3" x="355" y="19" width="40" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Bekasi, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="95ba2234-dffd-4dfc-a941-abe28102cef5" x="355" y="39" width="190" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Pemilik]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
