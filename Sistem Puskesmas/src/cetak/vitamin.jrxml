@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c8359409-879a-44c7-9a67-e7697bf0facf">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="307"/>
+	<property name="ireport.y" value="161"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="86006ce1-d707-4d08-ae06-90da9fd0459c"/>
+	<queryString>
+		<![CDATA[select nama_anak, usia, alamat, jenis_kelamin, ttl, tgl_vitamin, status, vitamin.id_vitamin, keterangan, tgl_vitamin from vitamin inner join pasien using (id_pasien)]]>
+	</queryString>
+	<field name="nama_anak" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ttl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_vitamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_vitamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="f6129c2c-e045-4a95-9792-229054611dad" mode="Opaque" x="0" y="0" width="802" height="99" forecolor="#1A7587" backcolor="#1A7587"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="04c2d801-ef9f-4559-83f8-8d435eaf233c" x="34" y="10" width="109" height="79"/>
+				<imageExpression><![CDATA["logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="6409eb40-3cee-4be2-8b19-b4c65d210e61" x="324" y="0" width="249" height="42" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="32"/>
+				</textElement>
+				<text><![CDATA[Posyandu Anggrek]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5c3abc6f-3a11-4119-82b4-6e0cb86e0284" x="364" y="42" width="173" height="20" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Griya Alam Sentosa No.6, Pasirangin, Cileungsi, Bogor, Jawa Barat.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="47b4dd36-d216-40e4-aab0-601bc71c6bc9" x="313" y="63" width="252" height="23" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[anggrekgriyaalam@gmail.com / 021-82495453]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="dec9da10-feda-440c-b4b9-49cdf81776f8" x="0" y="0" width="313" height="35" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Vitamin]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="8e486cc7-5d50-4eda-9122-ce2109941f91" x="0" y="0" width="802" height="20" backcolor="#1A7587"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="7e29d5e6-2a5c-4a77-bcee-6fef60c46712" x="0" y="0" width="71" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Vitamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e6059c8-ba4f-476f-a605-cfd88b66f481" x="71" y="0" width="72" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c625adc5-fe04-49aa-bd1b-6dffd5360eb3" x="143" y="0" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Anak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="91188364-71d7-4c1b-85b2-574799d984bf" x="551" y="0" width="151" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ffe06d9-4b83-4a95-8ea1-dea956318738" x="464" y="0" width="87" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Usia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e4da24e5-7383-4a6a-b849-864ac1b8faf2" x="243" y="0" width="121" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tempat, Tanggal Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="10c06552-aaed-47de-bd42-9988ff1a39b2" x="364" y="0" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf4483d3-4a44-4683-9fb5-4d290fbd2d1d" x="704" y="0" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement uuid="d74cc2f8-2162-4c12-a7a7-706783cc7a24" x="0" y="0" width="71" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_vitamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="00ec1c8b-5c40-4e41-b1af-bfcf74dfa2a1" x="143" y="0" width="100" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_anak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e0a60475-1043-488a-ad97-70d103daf2ee" x="71" y="0" width="72" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_vitamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0e8481dc-30c0-4cb0-bc6c-b4f362979391" x="243" y="0" width="121" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ttl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a3587805-5462-48d9-a70c-b1a232496a9a" x="364" y="0" width="100" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="60ae8db3-5d57-409a-b461-6c79f73ba9ce" x="464" y="0" width="46" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="23c9cb00-c55c-4718-97c2-cb5d577428af" x="551" y="0" width="151" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="66662150-e324-41d3-8df0-8350abedc811" x="702" y="0" width="100" height="20"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ef97ce27-5830-4e70-95d5-22ecdceda51c" x="510" y="0" width="41" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Bulan]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="151" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ccfd9de8-ea30-4d6e-8f23-0881bbe0598e" x="626" y="39" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Cileungsi,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a24f030a-3519-435f-9206-e6f19d11c14b" x="673" y="110" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Ketua Posyandu]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="67840783-d288-4a6f-9752-b6b0e85d1ef8" x="704" y="39" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="73979284-d61a-4280-ad41-eedd2d13b154">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select *from kematian]]>
+	</queryString>
+	<field name="id_kematian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_kematian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_anak" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ttl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_ibu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="98" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="f6129c2c-e045-4a95-9792-229054611dad" mode="Opaque" x="0" y="-1" width="555" height="99" forecolor="#1A7587" backcolor="#1A7587"/>
+			</rectangle>
+			<image>
+				<reportElement uuid="04c2d801-ef9f-4559-83f8-8d435eaf233c" x="37" y="10" width="109" height="79"/>
+				<imageExpression><![CDATA["logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="6409eb40-3cee-4be2-8b19-b4c65d210e61" x="190" y="0" width="249" height="42" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="32"/>
+				</textElement>
+				<text><![CDATA[Posyandu Anggrek]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5c3abc6f-3a11-4119-82b4-6e0cb86e0284" x="230" y="42" width="173" height="20" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Griya Alam Sentosa No.6, Pasirangin, Cileungsi, Bogor, Jawa Barat.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="47b4dd36-d216-40e4-aab0-601bc71c6bc9" x="179" y="63" width="252" height="23" forecolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[anggrekgriyaalam@gmail.com / 021-82495453]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="8e486cc7-5d50-4eda-9122-ce2109941f91" x="0" y="0" width="555" height="20" backcolor="#1A7587"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="7e29d5e6-2a5c-4a77-bcee-6fef60c46712" x="0" y="0" width="95" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Kematian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e6059c8-ba4f-476f-a605-cfd88b66f481" x="95" y="0" width="72" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c625adc5-fe04-49aa-bd1b-6dffd5360eb3" x="167" y="0" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Anak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ffe06d9-4b83-4a95-8ea1-dea956318738" x="367" y="0" width="60" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Usia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="10c06552-aaed-47de-bd42-9988ff1a39b2" x="267" y="0" width="100" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6329f50-56e7-416d-a409-6f2fb027e4e4" x="430" y="0" width="125" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement uuid="40220ee9-adce-4e86-adf4-9ad2800a5f08" x="3" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_kematian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b7c63f35-e576-4ac1-9bce-eb4a559a1f93" x="95" y="0" width="72" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal_kematian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3f4cfd8b-6a92-450f-96fe-17c037704af1" x="167" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_anak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4ef975db-6992-4602-b3fa-edcbbf252341" x="267" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="24d8b20c-934f-4dd5-b1b1-d837dbd8bfc2" x="367" y="0" width="21" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a556dd85-94f8-40d1-ba7b-5ad7f1ab1b1b" x="430" y="0" width="125" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keterangan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="ef97ce27-5830-4e70-95d5-22ecdceda51c" x="388" y="0" width="41" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Bulan]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="160" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ccfd9de8-ea30-4d6e-8f23-0881bbe0598e" x="380" y="45" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Cileungsi,]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="c8577a34-9fd5-4717-a52d-a58ce61b2897" x="456" y="45" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a24f030a-3519-435f-9206-e6f19d11c14b" x="427" y="116" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Ketua Posyandu]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
